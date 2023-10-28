@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&family=Varela+Round&display=swap");
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background: rgba(255, 255, 255, 0.209)
+    url("https://assets.hongkiat.com/uploads/beautiful-minimalist-desktop-wallpapers/4k/original/01.jpg?3")
+    no-repeat top fixed;
+  background-size: cover;
+
+  .principal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    .header {
+      font-family: "Varela Round", sans-serif;
+      font-size: 40px;
+
+      margin-top: 40px;
+    }
+    .central {
+      height: 70%;
+      width: 90%;
+      display: flex;
+      justify-content: space-evenly;
+      /* background-color: red; */
+      .card {
+        background: rgba(255, 255, 255, 0.15);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(14.5px);
+        -webkit-backdrop-filter: blur(14.5px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        height: 100%;
+        width: 32%;
+        position: relative;
+        align-items: center;
+        overflow: hidden;
+        .title {
+          font-family: "Varela Round", sans-serif;
+          font-size: 15px;
+          display: flex;
+          justify-content: center;
+          width: 100%;
+        }
+        .itens-scroll {
+          max-height: 75%;
+          overflow: auto;
+        }
+      }
+      .buttons-acao {
+        display: flex;
+        border-top: 1px solid rgb(174, 170, 170);
+        padding: 7px 0;
+        align-self: center;
+        position: absolute;
+        width: 100%;
+        justify-content: space-evenly;
+        bottom: 0px;
+        .add-bt {
+          background-color: #23cf5c;
+          border: none;
+          width: 90px;
+          height: 30px;
+          font-size: 24px;
+          color: white;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: background-color 0.3s, transform 0.3s;
+          border: none;
+        }
+        .add-bt:hover {
+          background-color: #60c381;
+          transform: scale(1.1);
+        }
+        .remove-bt {
+          background-color: #d12c38;
+          border: none;
+          width: 30px;
+          height: 30px;
+          font-size: 24px;
+          color: white;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: background-color 0.3s, transform 0.3s;
+        }
+        .remove-bt:hover {
+          background-color: #d4565e;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+.delete-icon {
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 24px;
+  background-color: #d12c38;
+  border: none;
+  width: 30px;
+  height: 30px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.delete-icon:hover {
+  background-color: #d4565e;
+  transform: scale(1.1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 6px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 1px black;
+  .texto-li {
+    width: 75%;
+    text-align: justify;
+    margin-left: 20px;
+  }
+}

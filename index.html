@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Método Kanban</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <script src="index.js"></script>
+  <body>
+    <div class="principal">
+      <header class="header">Kanban Simplificado</header>
+      <div class="central">
+        <div class="card">
+          <div class="title">
+            <h1>To Do</h1>
+          </div>
+          <div class="itens-scroll">
+            <ul id="lista-card1"></ul>
+          </div>
+          <div class="buttons-acao">
+            <button onclick="adicionar('lista-card1')" class="add-bt">+</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="title">
+            <h1>Doing</h1>
+          </div>
+          <div class="itens-scroll">
+            <ul id="lista-card2"></ul>
+          </div>
+          <div class="buttons-acao">
+            <button onclick="adicionar('lista-card2')" class="add-bt">+</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="title">
+            <h1>Done</h1>
+          </div>
+          <div class="itens-scroll">
+            <ul id="lista-card3"></ul>
+          </div>
+          <div class="buttons-acao">
+            <button onclick="adicionar('lista-card3')" class="add-bt">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
